@@ -4,6 +4,7 @@ import { Header } from '@components/Header';
 import { Hightlight } from '@components/Hightlight';
 import { GroupCard } from '@components/GroupCard';
 import { ListEmpty } from '@components/ListEmpty';
+import { Button } from '@components/Button';
 
 import { Container } from './styles'
 
@@ -26,6 +27,10 @@ export default function Groups() {
         ListEmptyComponent={() => (
           <ListEmpty message='Cadastre a primeira turma' />
         )}
+      />
+
+      <Button 
+        title='Criar turma'
       />
     </Container>
   );

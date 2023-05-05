@@ -1,8 +1,11 @@
-import styled from 'styled-components/native';
+import styled, {css} from 'styled-components/native';
 
 export const Container = styled.View`
   flex: 1;
-  background-color: ${({ theme }) => theme.COLORS.GRAY_600};
+
+  ${({ theme }) => css`
+    background-color: ${theme.COLORS.GRAY_600};
+    font-size: ${theme.FONT_SIZE.MD};
+  `};
   padding: 24px;
-  font-size: 16px;
 `

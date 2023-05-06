@@ -8,7 +8,7 @@ import { Button } from '@components/Button';
 
 import { Container } from './styles'
 
-export default function Groups() {
+export function Groups() {
   const [groups, setGroups] = useState<string[]>([]);
   return (
     <Container>

@@ -6,10 +6,11 @@ import { Hightlight } from '@components/Hightlight';
 import { ButtonIcon } from '@components/ButtonIcon';
 import { Input } from '@components/Input';
 import { Filter } from '@components/Filter';
+import { PlayerCard } from '@components/PlayerCard';
 
 export function Players() {
   const [team, setTeam] = useState('Time A');
-  const [players, setPlayers] = useState([]);
+  const [players, setPlayers] = useState(['Ewerson', 'Ewerson']);
 
   return (
     <Container>
@@ -47,6 +48,17 @@ export function Players() {
             {players.length} jogadores
         </NumberOfPlayers>
       </HeaderList>
+
+      <FlatList
+        data={players}
+        keyExtractor={(item) => item}
+        renderItem={({ item }) => (
+          <PlayerCard
+            name={item}
+            onRemove={() => { }}
+          />
+        )}
+      />
 
     </Container>
   );

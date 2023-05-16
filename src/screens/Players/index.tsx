@@ -125,7 +125,7 @@ export function Players() {
 
       <Hightlight
         title={group}
-        subtitle="Adicione a galera e separe os times"
+        subtitle="adicione a galera e separe os times"
       />
 
       <Form>
@@ -185,7 +185,7 @@ export function Players() {
       }
 
       <Button
-        title="Remover Turma"
+        title="Remover turma"
         type="SECONDARY"
         onPress={handleGroupRemove}
       />

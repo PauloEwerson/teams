@@ -48,7 +48,7 @@ export function Groups() {
   return (
     <Container>
       <Header />
-      <Hightlight title='Turmas' subtitle='Jogue com sua turma' />
+      <Hightlight title='Turmas' subtitle='jogue com sua turma' />
       {
         isLoading ? (<Loading />) : (
           <FlatList
@@ -70,7 +70,7 @@ export function Groups() {
       }
 
       <Button
-        title='Criar turma'
+        title='Criar nova turma'
         onPress={handleNewGroup}
       />
     </Container>

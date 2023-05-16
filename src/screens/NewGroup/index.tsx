@@ -50,7 +50,7 @@ export function NewGroup() {
         />
 
         <Button
-          title="Criar turma"
+          title="Criar"
           style={{ marginTop: 20 }}
           onPress={handleNew}
         />
